@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "basics:cobblestone_mossy_reinforced"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"X#X",
+			"XXX"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:obsidian"
+			},
+			"X": {
+				"item": "minecraft:mossy_cobblestone"
+			}
+		},
+		"result": [
+			{
+				"item": "basics:cobblestone_mossy_reinforced",
+				"count": 8
+			}
+		]
+	}
+}

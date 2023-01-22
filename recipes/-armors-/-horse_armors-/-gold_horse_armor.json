@@ -1,0 +1,27 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:gold_horse_armor"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A A",
+			"AAA",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:horsearmorgold"
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shapeless": {
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:shears"
+			},
+			{
+				"item": "minecraft:flint"
+			}
+		],
+		"result": {
+			"item": "basics:chest_braker",
+			"count": 1
+		},
+		"description": {
+			"identifier": "basics:chest_braker"
+		}
+	}
+}

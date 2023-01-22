@@ -1,0 +1,26 @@
+{
+	"format_version": "1.18.2",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:crafting_table_from_oak_planks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "crafting_table",
+			"count": 1
+		},
+		"priority": 0
+	}
+}

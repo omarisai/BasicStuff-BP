@@ -1,0 +1,137 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "basics:concrete_orange_reinforced",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.concrete"
+			},
+			"properties": {
+				"basics:rotation": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"events": {
+			"basics:set_rotation": {
+				"set_block_property": {
+					"basics:rotation": "(query.block_face)"
+				}
+			},
+			"basics:destroy": {
+				"die": {}
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#573320",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "concrete_orange_reinforced",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:geometry": "geometry.block_2_faces",
+			"minecraft:destructible_by_mining": false,
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:on_player_placing": {
+				"event": "basics:set_rotation"
+			},
+			"minecraft:on_interact": {
+				"condition": "query.block_face == query.block_property('basics:rotation') && query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:chest_braker')",
+				"event": "basics:destroy"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('basics:rotation') == 0",
+				"components": {
+					"minecraft:rotation": [
+						180,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('basics:rotation') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('basics:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('basics:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('basics:rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('basics:rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						90,
+						0
+					]
+				}
+			}
+		]
+	}
+}

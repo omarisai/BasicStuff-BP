@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:npc"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"BAB",
+			" X "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:egg"
+			},
+			"B": {
+				"item": "minecraft:barrier"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 51,
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

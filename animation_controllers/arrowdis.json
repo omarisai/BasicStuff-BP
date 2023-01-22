@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.basics.arrowdis.functions": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function": "query.skin_id == 1"
+						}
+					]
+				},
+				"function": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/kill @e[type=arrow,c=1]"
+					]
+				}
+			}
+		}
+	}
+}

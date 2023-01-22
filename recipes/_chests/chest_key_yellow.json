@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#",
+			"i"
+		],
+		"key": {
+			"#": {
+				"item": "basics:chest_key"
+			},
+			"i": {
+				"item": "minecraft:dye",
+				"data": 11
+			}
+		},
+		"result": {
+			"item": "basics:chest_key_yellow",
+			"count": 1
+		},
+		"description": {
+			"identifier": "basics:chest_key_yellow"
+		}
+	}
+}

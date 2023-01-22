@@ -1,0 +1,88 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "basics:tombbox",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:chest"
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"tombboxes"
+				]
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true,
+				"always_show": false
+			},
+			"minecraft:item_hopper": {},
+			"minecraft:inventory": {
+				"inventory_size": 27,
+				"container_type": "container",
+				"can_be_siphoned_from": true,
+				"restrict_to_owner": false,
+				"private": true
+			}
+		},
+		"component_groups": {
+			"tombbox:spawned": {
+				"minecraft:health": {
+					"min": 999,
+					"max": 999,
+					"value": 999
+				},
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"test": "is_riding",
+							"operator": "!=",
+							"value": true
+						},
+						"event": "tombbox:die"
+					}
+				}
+			},
+			"tombbox:dead": {
+				"minecraft:health": {
+					"min": 0,
+					"max": 0,
+					"value": 0
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"tombbox:spawned"
+					]
+				}
+			},
+			"tombbox:die": {
+				"add": {
+					"component_groups": [
+						"tombbox:dead"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"tombbox:spawned"
+					]
+				}
+			}
+		}
+	}
+}

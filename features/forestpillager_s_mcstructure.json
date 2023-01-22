@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "minecraft:forestpillager_s_mcstructure"
+		},
+		"structure_name": "mystructure:forestpillager_s",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"unburied": {},
+			"block_intersection": {
+				"block_allowlist": [
+					"minecraft:air",
+					"minecraft:grass",
+					"minecraft:tallgrass",
+					"minecraft:dirt",
+					"minecraft:leaves", //spruce_leaves
+					"minecraft:log" //spruce_log
+				]
+			}
+		}
+	}
+}

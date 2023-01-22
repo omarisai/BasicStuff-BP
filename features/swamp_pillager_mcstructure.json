@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "minecraft:swamp_pillager_mcstructure"
+		},
+		"structure_name": "mystructure:swamp_pillager",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_allowlist": [
+					"minecraft:air",
+					"minecraft:grass",
+					"minecraft:water",
+					"minecraft:waterlily",
+					"minecraft:vine",
+					"minecraft:dirt",
+					"minecraft:mud",
+					"minecraft:oak_log",
+					"minecraft:tallgrass",
+					"minecraft:seagrass",
+					"minecraft:clay",
+					"minecraft:mangrove_log",
+					"minecraft:mangrove_leaves",
+					"minecraft:mangrove_roots",
+					"minecraft:muddy_mangrove_roots",
+					"minecraft:mangrove_propagule",
+					"minecraft:moss_carpet"
+				]
+			}
+		}
+	}
+}

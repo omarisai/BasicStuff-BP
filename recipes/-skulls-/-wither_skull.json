@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:wither_skeleton_skull"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wither_rose"
+			},
+			"B": {
+				"item": "minecraft:netherstar"
+			}
+		},
+		"result": {
+			"item": "minecraft:skull",
+			"data": 1
+		}
+	}
+}

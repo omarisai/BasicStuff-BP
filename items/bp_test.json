@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bps:bp_test",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:foil": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "backpack"
+			},
+			"minecraft:display_name": {
+				"value": "Backpack Test"
+			},
+			"minecraft:item_storage": {
+				"capacity": 2048
+			}
+		},
+		"events": {}
+	}
+}

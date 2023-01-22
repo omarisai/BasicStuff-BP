@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:evoker_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A ",
+			"CBC",
+			" X "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:totem"
+			},
+			"B": {
+				"item": "minecraft:egg"
+			},
+			"C": {
+				"item": "minecraft:emerald"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 104
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

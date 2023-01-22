@@ -1,0 +1,26 @@
+{
+	"format_version": "1.18.2",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:crafting_table_from_spruce_planks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 1
+			}
+		},
+		"result": {
+			"item": "basics:spruce_crafting_table",
+			"count": 1
+		},
+		"priority": 0
+	}
+}

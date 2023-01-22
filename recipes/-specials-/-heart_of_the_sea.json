@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:heart_of_the_sea"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:diamond"
+			},
+			"B": {
+				"item": "minecraft:ghast_tear"
+			}
+		},
+		"result": {
+			"item": "minecraft:heart_of_the_sea"
+		}
+	}
+}

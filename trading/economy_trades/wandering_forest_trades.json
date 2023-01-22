@@ -1,0 +1,317 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"num_to_select": 3,
+					"trades": [
+						{
+							"max_uses": 3,
+							"wants": [
+								{
+									"choice": [
+										{
+											"item": "minecraft:yellow_flower",
+											"quantity": 10
+										},
+										{
+											"item": "minecraft:double_plant:1",
+											"quantity": 5
+										},
+										{
+											"item": "minecraft:double_plant:4",
+											"quantity": 5
+										}
+									]
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": 3,
+							"wants": [
+								{
+									"choice": [
+										{
+											"item": "minecraft:yellow_flower",
+											"quantity": 10
+										},
+										{
+											"item": "minecraft:double_plant:1",
+											"quantity": 5
+										},
+										{
+											"item": "minecraft:double_plant:4",
+											"quantity": 5
+										}
+									]
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": 3,
+							"wants": [
+								{
+									"item": "minecraft:sweet_berries",
+									"quantity": 10
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald"
+								}
+							]
+						},
+						{
+							"max_uses": 3,
+							"wants": [
+								{
+									"choice": [
+										{
+											"item": "minecraft:brown_mushroom",
+											"quantity": 10
+										},
+										{
+											"item": "minecraft:red_mushroom",
+											"quantity": 10
+										}
+									]
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							]
+						}
+					]
+				},
+				{
+					"num_to_select": 4,
+					"trades": [
+						{
+							"max_uses": 1,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 10
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:diamond",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": 1,
+							"wants": [
+								{
+									"item": "minecraft:emerald"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:bread",
+									"quantity": 5
+								}
+							]
+						},
+						{
+							"max_uses": 2,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:campfire"
+								}
+							]
+						},
+						{
+							"max_uses": 2,
+							"wants": [
+								{
+									"item": "minecraft:emerald"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:arrow",
+									"quantity": 10
+								}
+							]
+						},
+						{
+							"max_uses": 1,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:bone",
+									"quantity": 10
+								}
+							]
+						},
+						{
+							"max_uses": 2,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:lapis_lazuli",
+									"quantity": 3
+								}
+							]
+						},
+						{
+							"max_uses": 1,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 5
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:ender_pearl"
+								}
+							]
+						},
+						{
+							"max_uses": 6,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"choice": [
+										{
+											"item": "minecraft:candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:black_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:blue_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:brown_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:cyan_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:gray_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:green_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:light_blue_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:light_gray_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:lime_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:magenta_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:orange_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:pink_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:purple_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:red_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:white_candle",
+											"quantity": 3
+										},
+										{
+											"item": "minecraft:yellow_candle",
+											"quantity": 3
+										}
+									]
+								}
+							]
+						},
+						{
+							"max_uses": 1,
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 15
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:book",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "enchant_book_for_trading",
+											"base_cost": 2,
+											"base_random_cost": 5,
+											"per_level_random_cost": 8,
+											"per_level_cost": 5
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

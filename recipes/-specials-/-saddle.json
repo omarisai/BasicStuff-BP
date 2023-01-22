@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft_saddle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"B B"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:leather"
+			},
+			"B": {
+				"item": "minecraft:tripwire_hook"
+			}
+		},
+		"result": {
+			"item": "minecraft:saddle"
+		}
+	}
+}

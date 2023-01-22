@@ -1,0 +1,43 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:ravager_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ACA",
+			"BDB",
+			"AXA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:emerald"
+			},
+			"B": {
+				"item": "minecraft:iron_axe"
+			},
+			"C": {
+				"item": "minecraft:crossbow"
+			},
+			"D": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 59
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

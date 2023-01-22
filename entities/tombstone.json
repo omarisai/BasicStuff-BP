@@ -1,0 +1,208 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "basics:tombstone",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:chest"
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"tombstones"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true,
+				"always_show": false
+			},
+			"minecraft:navigation.generic": {
+				"can_sink": false
+			},
+			"minecraft:breathable": {
+				"breathe_blocks": [
+					"minecraft:barrier"
+				],
+				"total_supply": 99999,
+				"breathes_solids": true
+			},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"family_types": [
+					"tombboxes"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0,
+							0.2,
+							0
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:buoyant": {
+				"base_buoyancy": 1.0,
+				"apply_gravity": false,
+				"simulate_waves": false,
+				"big_wave_probability": 0.03,
+				"big_wave_speed": 10.0,
+				"liquid_blocks": [
+					"minecraft:water",
+					"minecraft:flowing_water",
+					"minecraft:lava",
+					"minecraft:flowing_lava"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 999,
+				"max": 999
+			}
+		},
+		"component_groups": {
+			"tombstone:spawned": {
+				"minecraft:item_hopper": {},
+				"minecraft:health": {
+					"min": 999,
+					"max": 999,
+					"value": 999
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 2,
+					"time_down_event": {
+						"event": "tombstone:expand"
+					}
+				}
+			},
+			"tombstone:expanded": {
+				"minecraft:item_hopper": {},
+				"minecraft:addrider": {
+					"entity_type": "basics:tombbox"
+				}
+			},
+			"tombstone:locked": {
+				"minecraft:inventory": {
+					"inventory_size": 27,
+					"container_type": "container",
+					"restrict_to_owner": true,
+					"private": true
+				},
+				"minecraft:tameable": {
+					"probability": 1,
+					"tame_items": [
+						"basics:grave_key",
+						"basics:grave_key_00",
+						"basics:grave_key_01",
+						"basics:grave_key_02",
+						"basics:grave_key_03",
+						"basics:grave_key_04",
+						"basics:grave_key_05",
+						"basics:grave_key_06",
+						"basics:grave_key_07",
+						"basics:grave_key_08",
+						"basics:grave_key_09",
+						"basics:grave_key_10",
+						"basics:grave_key_11",
+						"basics:grave_key_12"
+					],
+					"tame_event": {
+						"event": "tombstone:unlock",
+						"target": "self"
+					}
+				}
+			},
+			"tombstone:unlocked": {
+				"minecraft:inventory": {
+					"inventory_size": 27,
+					"container_type": "container",
+					"restrict_to_owner": true,
+					"private": false
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 120,
+					"time_down_event": {
+						"event": "tombstone:die"
+					}
+				}
+			},
+			"tombstone:dead": {
+				"minecraft:health": {
+					"min": 0,
+					"max": 0,
+					"value": 0
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"tombstone:spawned",
+						"tombstone:locked"
+					]
+				}
+			},
+			"tombstone:expand": {
+				"add": {
+					"component_groups": [
+						"tombstone:expanded"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"tombstone:spawned"
+					]
+				}
+			},
+			"tombstone:unlock": {
+				"add": {
+					"component_groups": [
+						"tombstone:unlocked"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"tombstone:locked"
+					]
+				}
+			},
+			"tombstone:die": {
+				"add": {
+					"component_groups": [
+						"tombstone:dead"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"tombstone:unlocked"
+					]
+				}
+			}
+		}
+	}
+}

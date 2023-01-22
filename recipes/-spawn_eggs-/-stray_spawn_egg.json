@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:stray_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"BCB",
+			"AXA"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:ice"
+			},
+			"A": {
+				"item": "minecraft:bone"
+			},
+			"C": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 46
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

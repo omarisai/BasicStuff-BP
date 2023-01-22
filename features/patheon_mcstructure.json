@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "minecraft:patheon_mcstructure"
+		},
+		"structure_name": "mystructure:patheon",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {}
+		}
+	}
+}

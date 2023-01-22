@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "minecraft:bucket_of_pufferfish"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:pufferfish"
+			},
+			{
+				"item": "minecraft:bucket",
+				"data": 8
+			}
+		],
+		"result": [
+			{
+				"item": "minecraft:bucket",
+				"data": 5
+			}
+		]
+	}
+}

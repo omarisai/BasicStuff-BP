@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:basalt"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B",
+			"C"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:packed_ice"
+			},
+			"C": {
+				"item": "minecraft:bucket",
+				"data": 10
+			},
+			"B": {
+				"item": "minecraft:blackstone"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:basalt",
+				"count": 4
+			},
+			{
+				"item": "minecraft:bucket",
+				"data": 0
+			}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "basics:grave_key"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" #R",
+			" O#",
+			"X	"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:iron_ingot",
+				"data": 0
+			},
+			"O": {
+				"item": "minecraft:bone"
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "basics:grave_key",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.basics.fishdis.functions": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function": "query.skin_id == 1"
+						}
+					]
+				},
+				"function": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/kill @e[type=fishing_hook,c=1]"
+					]
+				}
+			}
+		}
+	}
+}

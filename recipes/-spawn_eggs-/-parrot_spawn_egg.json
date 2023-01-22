@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:parrot_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A ",
+			"BCB",
+			" X "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:feather"
+			},
+			"C": {
+				"item": "minecraft:egg"
+			},
+			"A": {
+				"item": "minecraft:wheat_seeds"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 30
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

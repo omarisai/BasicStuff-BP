@@ -1,0 +1,2 @@
+summon witch
+setblock ~ ~ ~ air

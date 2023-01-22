@@ -1,0 +1,134 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.basics.locked_chest.functions": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function_8": "query.skin_id == 8"
+						},
+						{
+							"function_7": "query.skin_id == 7"
+						},
+						{
+							"function_6": "query.skin_id == 6"
+						},
+						{
+							"function_5": "query.skin_id == 5"
+						},
+						{
+							"function_4": "query.skin_id == 4"
+						},
+						{
+							"function_3": "query.skin_id == 3"
+						},
+						{
+							"function_2": "query.skin_id == 2"
+						},
+						{
+							"function_1": "query.skin_id == 1"
+						}
+					]
+				},
+				"function_1": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/tp @e[family=basics_chest,c=1,r=3] ~ ~ ~ 0 0",
+						"/setblock ~ ~ ~ barrier",
+						"/execute at @e[family=lockable,r=3,c=1] run playsound random.anvil_land @a[r=3] ~ ~ ~ 0.5",
+						"/gamerule sendcommandfeedback false",
+						"@s remove_1"
+					]
+				},
+				"function_2": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 2"
+						}
+					],
+					"on_entry": [
+						"/title @a[r=5] actionbar Locked",
+						"/playsound random.orb @a[r=5]",
+						"@s remove_2"
+					]
+				},
+				"function_3": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 3"
+						}
+					],
+					"on_entry": [
+						"/title @a[r=5] actionbar Unlocked",
+						"/playsound random.orb @a[r=5]",
+						"@s remove_3"
+					]
+				},
+				"function_4": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 4"
+						}
+					],
+					"on_entry": [
+						"/playsound random.chestopen @a[r=5] ~ ~ ~ 0.5",
+						"@s remove_4"
+					]
+				},
+				"function_5": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 5"
+						}
+					],
+					"on_entry": [
+						"/playsound random.chestclosed @a[r=5] ~ ~ ~ 0.5",
+						"@s remove_5"
+					]
+				},
+				"function_6": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 6"
+						}
+					],
+					"on_entry": [
+						"/title @a[r=5] actionbar §cThis chest is locked",
+						"/playsound random.pop @a[r=5]",
+						"@s remove_6"
+					]
+				},
+				"function_7": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 7"
+						}
+					],
+					"on_entry": [
+						"/title @a[r=5] actionbar §eCard error§r: Owner mismatched",
+						"/playsound random.pop @a[r=5]",
+						"@s remove_7"
+					]
+				},
+				"function_8": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 8"
+						}
+					],
+					"on_entry": [
+						"/setblock ~ ~ ~ air",
+						"/give @p basics:locked_chest_spawn_egg",
+						"/kill @e[family=basics_chest,c=1,r=3]",
+						"@s remove_8"
+					]
+				}
+			}
+		}
+	}
+}

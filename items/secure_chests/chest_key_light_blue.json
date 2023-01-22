@@ -1,0 +1,19 @@
+{
+	"format_version": "1.18.2",
+	"minecraft:item": {
+		"description": {
+			"identifier": "basics:chest_key_light_blue",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "basics_chest_key_light_blue"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.secure_chests"
+			},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {}
+	}
+}

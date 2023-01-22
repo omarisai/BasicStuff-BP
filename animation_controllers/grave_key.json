@@ -1,0 +1,221 @@
+{
+	"format_version": "1.16.0",
+	"animation_controllers": {
+		"controller.animation.grave_key_use": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"teleport00": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_00') && query.is_using_item"
+						},
+						{
+							"teleport01": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_01') && query.is_using_item"
+						},
+						{
+							"teleport02": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_02') && query.is_using_item"
+						},
+						{
+							"teleport03": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_03') && query.is_using_item"
+						},
+						{
+							"teleport04": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_04') && query.is_using_item"
+						},
+						{
+							"teleport05": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_05') && query.is_using_item"
+						},
+						{
+							"teleport06": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_06') && query.is_using_item"
+						},
+						{
+							"teleport07": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_07') && query.is_using_item"
+						},
+						{
+							"teleport08": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_08') && query.is_using_item"
+						},
+						{
+							"teleport09": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_09') && query.is_using_item"
+						},
+						{
+							"teleport10": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_10') && query.is_using_item"
+						},
+						{
+							"teleport11": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_11') && query.is_using_item"
+						},
+						{
+							"teleport12": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_12') && query.is_using_item"
+						}
+					]
+				},
+				"teleport00": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_00')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_00,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport01": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_01')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_01,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport02": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_02')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_02,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport03": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_03')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_03,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport04": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_04')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_04,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport05": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_05')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_05,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport06": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_06')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_06,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport07": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_07')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_07,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport08": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_08')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_08,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport09": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_09')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_09,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport10": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_10')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_10,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport11": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_11')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_11,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"teleport12": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:grave_key_12')"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tp @p @e[type=basics:tombstone,name=Tombstone_12,c=1]",
+						"/tp @p ~ ~ ~1 180 50",
+						"/gamerule sendcommandfeedback true"
+					]
+				}
+			}
+		}
+	}
+}

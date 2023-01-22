@@ -1,0 +1,22 @@
+{
+	"format_version": "1.18.2",
+	"minecraft:item": {
+		"description": {
+			"identifier": "basics:xp_bottle_full",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "xp_bottle_full"
+			},
+			"minecraft:render_offsets": "apple",
+			"minecraft:max_stack_size": 64,
+			"minecraft:stacked_by_data": false,
+			"minecraft:use_duration": 0,
+			"minecraft:foil": true,
+			"minecraft:food": {
+				"can_always_eat": true
+			}
+		}
+	}
+}

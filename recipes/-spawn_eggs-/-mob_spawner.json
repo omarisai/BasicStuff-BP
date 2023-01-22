@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:mob_spawner"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"ABA",
+			"XXX"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_bars"
+			},
+			"B": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:mob_spawner"
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

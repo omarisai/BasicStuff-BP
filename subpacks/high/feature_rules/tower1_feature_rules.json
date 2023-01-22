@@ -1,0 +1,57 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:tower1_feature_rules",
+			"places_feature": "minecraft:tower1_mcstructure"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "ice"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "beach"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "savanna"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": 0.40,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					28
+				]
+			},
+			"y": "query.heightmap(variable.worldx, variable.worldz) + -1",
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					28
+				]
+			}
+		}
+	}
+}

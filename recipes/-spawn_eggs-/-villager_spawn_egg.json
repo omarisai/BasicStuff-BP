@@ -1,0 +1,43 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:villager_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ACA",
+			"BDB",
+			"AXA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wheat"
+			},
+			"B": {
+				"item": "minecraft:potato"
+			},
+			"C": {
+				"item": "minecraft:emerald"
+			},
+			"D": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 15
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

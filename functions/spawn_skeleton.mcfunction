@@ -1,0 +1,2 @@
+summon skeleton
+setblock ~ ~ ~ air

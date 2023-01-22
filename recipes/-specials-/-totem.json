@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft_totem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"BBB",
+			" B "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:emerald"
+			},
+			"B": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": {
+			"item": "minecraft:totem"
+		}
+	}
+}

@@ -1,0 +1,82 @@
+{
+	"format_version": "1.16.0",
+	"animation_controllers": {
+		"controller.animation.xp_bottle_use": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"xp_bottle_empty": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:glass_bottle')"
+						},
+						{
+							"xp_bottle_full": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:xp_bottle_full')"
+						}
+					]
+				},
+				"xp_bottle_empty": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:glass_bottle')"
+						},
+						{
+							"xp_bottle_fill": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:glass_bottle') && query.player_level >= 5 && query.is_using_item"
+						}
+					]
+				},
+				"xp_bottle_fill": {
+					"animations": [
+						"use_timer"
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/particle basics:large_out ~~1~",
+						"/particle basics:med_out ~~1~",
+						"/particle basics:small_out ~~1~",
+						"/playsound random.orb_extract @p ~ ~ ~ 1",
+						"/clear @p glass_bottle 0 1",
+						"/xp -5L @p",
+						"/give @p basics:xp_bottle_full",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"xp_bottle_full": {
+					"transitions": [
+						{
+							"default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:xp_bottle_full')"
+						},
+						{
+							"xp_bottle_use": "query.is_item_name_any('slot.weapon.mainhand', 0, 'basics:xp_bottle_full') && query.is_using_item"
+						}
+					]
+				},
+				"xp_bottle_use": {
+					"animations": [
+						"use_timer"
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/particle basics:large_in ~~1~",
+						"/particle basics:med_in ~~1~",
+						"/particle basics:small_in ~~1~",
+						"/playsound random.orb @p ~ ~ ~ 1",
+						"/clear @p basics:xp_bottle_full 0 1",
+						"/xp 5L @p",
+						"/give @p glass_bottle",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

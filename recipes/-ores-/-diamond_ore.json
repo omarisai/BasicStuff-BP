@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "minecraft:diamond_ore"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond"
+			},
+			{
+				"item": "minecraft:stone"
+			}
+		],
+		"result": {
+			"item": "minecraft:diamond_ore"
+		}
+	}
+}

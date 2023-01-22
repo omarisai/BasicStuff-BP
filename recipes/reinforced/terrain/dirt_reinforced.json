@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "basics:dirt_reinforced"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"X#X",
+			"XXX"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:obsidian"
+			},
+			"X": {
+				"item": "minecraft:dirt"
+			}
+		},
+		"result": [
+			{
+				"item": "basics:dirt_reinforced",
+				"count": 8
+			}
+		]
+	}
+}

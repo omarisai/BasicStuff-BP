@@ -1,0 +1,30 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:jpyramid_feature_rules",
+			"places_feature": "minecraft:jpyramid_mcstructure"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "jungle"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": 2,
+			"x": 28,
+			"y": "query.heightmap(variable.worldx, variable.worldz) + -15",
+			"z": 28
+		}
+	}
+}

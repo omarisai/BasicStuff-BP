@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:witch_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABA",
+			"BCB",
+			"AXA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:redstone"
+			},
+			"B": {
+				"item": "minecraft:glass_bottle",
+				"data": 0
+			},
+			"C": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 45
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

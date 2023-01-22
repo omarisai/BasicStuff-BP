@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:strider_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A ",
+			"BCB",
+			" X "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:string"
+			},
+			"A": {
+				"item": "minecraft:bucket",
+				"data": 10
+			},
+			"C": {
+				"item": "minecraft:egg"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 125
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

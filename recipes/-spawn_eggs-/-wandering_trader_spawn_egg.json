@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:wandering_trader_spawn_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"CBC",
+			"AXA"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:egg"
+			},
+			"C": {
+				"item": "minecraft:leather"
+			},
+			"A": {
+				"item": "minecraft:emerald"
+			},
+			"X": {
+				"item": "basics:xp_bottle_full"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": 118
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

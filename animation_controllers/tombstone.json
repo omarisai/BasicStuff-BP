@@ -1,0 +1,297 @@
+{
+	"format_version": "1.16.0",
+	"animation_controllers": {
+		"controller.animation.spawn_tombstone": {
+			"initial_state": "alive",
+			"states": {
+				"alive": {
+					"transitions": [
+						{
+							"died": "!query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/event entity @s basics:player_died",
+						"/event entity @s basics:get_random_tomb"
+					]
+				},
+				"died": {
+					"transitions": [
+						{
+							"tomb00": "query.mark_variant == 0"
+						},
+						{
+							"tomb01": "query.mark_variant == 1"
+						},
+						{
+							"tomb02": "query.mark_variant == 2"
+						},
+						{
+							"tomb03": "query.mark_variant == 3"
+						},
+						{
+							"tomb04": "query.mark_variant == 4"
+						},
+						{
+							"tomb05": "query.mark_variant == 5"
+						},
+						{
+							"tomb06": "query.mark_variant == 6"
+						},
+						{
+							"tomb07": "query.mark_variant == 7"
+						},
+						{
+							"tomb08": "query.mark_variant == 8"
+						},
+						{
+							"tomb09": "query.mark_variant == 9"
+						},
+						{
+							"tomb10": "query.mark_variant == 10"
+						},
+						{
+							"tomb11": "query.mark_variant == 11"
+						},
+						{
+							"tomb12": "query.mark_variant == 12"
+						}
+					]
+				},
+				"tomb00": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_00",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_00",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb01": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_01",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_01",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb02": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_02",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_02",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb03": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_03",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_03",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb04": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_04",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_04",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb05": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_05",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_05",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb06": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_06",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_06"
+					]
+				},
+				"tomb07": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_07",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_07",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb08": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_08",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_08",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb09": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_09",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_09",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb10": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_10",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_10",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb11": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_11",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_11",
+						"/gamerule sendcommandfeedback true"
+					]
+				},
+				"tomb12": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/summon basics:tombstone Tombstone_12",
+						"/execute at @e[type=basics:tombstone,c=1] run tp @e[type=item,r=15] ~ ~1 ~",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback false",
+						"/give @s basics:grave_key_12",
+						"/gamerule sendcommandfeedback true"
+					]
+				}
+			}
+		}
+	}
+}

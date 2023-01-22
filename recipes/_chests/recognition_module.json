@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#",
+			"I"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:observer"
+			},
+			"I": {
+				"item": "minecraft:iron_trapdoor"
+			}
+		},
+		"result": {
+			"item": "basics:recognition_module",
+			"count": 1
+		},
+		"description": {
+			"identifier": "basics:recognition_module"
+		}
+	}
+}

@@ -1,0 +1,637 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "basics:locked_chest_light_blue",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"basics_functions"
+				]
+			},
+			"animations": {
+				"basics_functions": "controller.animation.basics.locked_chest.functions"
+			}
+		},
+		"component_groups": {
+			"minecraft:private": {
+				"minecraft:health": {
+					"min": 999,
+					"max": 999,
+					"value": 999
+				},
+				"minecraft:inventory": {
+					"container_type": "minecart_chest",
+					"inventory_size": 28,
+					"private": true
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"value": "basics:chest_key_light_blue",
+									"domain": "hand"
+								},
+								"event": "minecraft:on_interact"
+							}
+						},
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"operator": "!=",
+									"value": "basics:chest_key_light_blue"
+								},
+								"event": "error"
+							}
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"minecraft:chest": {
+				"minecraft:inventory": {
+					"container_type": "minecart_chest",
+					"inventory_size": 28,
+					"private": false
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"value": "basics:chest_key_light_blue",
+									"domain": "hand"
+								},
+								"event": "minecraft:on_prime"
+							}
+						},
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"play_sounds": "shear",
+							"on_interact": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "basics:chest_braker"
+								},
+								"event": "minecraft:broked"
+							}
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:health": {
+					"min": 0,
+					"max": 9999,
+					"value": 9999
+				}
+			},
+			"minecraft:container": {
+				"minecraft:is_chested": {},
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"subject": "other",
+						"test": "has_container_open",
+						"value": false
+					},
+					"event": "minecraft:close",
+					"sensor_range": 1.5
+				}
+			},
+			"minecraft:inventory": {
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"subject": "other",
+						"test": "has_container_open",
+						"value": true
+					},
+					"event": "minecraft:open",
+					"sensor_range": 1.5
+				}
+			},
+			"minecraft:no_owner": {
+				"minecraft:tameable": {
+					"tame_items": [
+						"basics:recognition_module"
+					],
+					"probability": 1,
+					"tame_event": {
+						"event": "minecraft:only_for_owner"
+					}
+				}
+			},
+			"minecraft:owner_access_only": {
+				"minecraft:is_chested": {},
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"all_of": [
+							{
+								"subject": "other",
+								"test": "has_container_open",
+								"value": false
+							},
+							{
+								"test": "is_owner",
+								"subject": "other",
+								"value": true
+							}
+						]
+					},
+					"event": "owner_close",
+					"sensor_range": 1.5
+				}
+			},
+			"minecraft:test_for_owner": {
+				"minecraft:entity_sensor": {
+					"event_filters": {
+						"all_of": [
+							{
+								"subject": "other",
+								"test": "has_container_open",
+								"value": true
+							},
+							{
+								"test": "is_owner",
+								"subject": "other",
+								"value": true
+							}
+						]
+					},
+					"event": "owner_open",
+					"sensor_range": 1.5
+				}
+			},
+			"minecraft:set_owner": {
+				"minecraft:is_tamed": {}
+			},
+			"owner_private": {
+				"minecraft:health": {
+					"min": 999,
+					"max": 999,
+					"value": 999
+				},
+				"minecraft:inventory": {
+					"container_type": "minecart_chest",
+					"inventory_size": 28,
+					"private": true
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "basics:chest_key_light_blue"
+										},
+										{
+											"test": "is_owner",
+											"subject": "other",
+											"value": true
+										}
+									]
+								},
+								"event": "minecraft:on_owner_interact"
+							}
+						},
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"any_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"operator": "!=",
+											"value": "basics:chest_key_light_blue"
+										},
+										{
+											"test": "is_owner",
+											"subject": "other",
+											"value": false
+										}
+									]
+								},
+								"event": "error_owned"
+							}
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"owner_local": {
+				"minecraft:health": {
+					"min": 0,
+					"max": 9999,
+					"value": 9999
+				},
+				"minecraft:inventory": {
+					"container_type": "minecart_chest",
+					"inventory_size": 28,
+					"private": false
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "basics:chest_key_light_blue"
+										},
+										{
+											"test": "is_owner",
+											"subject": "other",
+											"value": true
+										}
+									]
+								},
+								"event": "minecraft:owner_prime"
+							}
+						},
+						{
+							"use_item": false,
+							"interact_text": "interact",
+							"play_sounds": "unfect",
+							"on_interact": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "basics:chest_braker"
+								},
+								"event": "minecraft:broked"
+							}
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"remove": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"function_1": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"function_2": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"function_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			},
+			"function_4": {
+				"minecraft:skin_id": {
+					"value": 4
+				}
+			},
+			"function_5": {
+				"minecraft:skin_id": {
+					"value": 5
+				}
+			},
+			"function_6": {
+				"minecraft:skin_id": {
+					"value": 6
+				}
+			},
+			"function_7": {
+				"minecraft:skin_id": {
+					"value": 7
+				}
+			},
+			"function_8": {
+				"minecraft:skin_id": {
+					"value": 8
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"basics_chest"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:breathable": {
+				"breathe_blocks": [
+					"minecraft:barrier"
+				],
+				"total_supply": 99999,
+				"breathes_solids": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 999,
+				"max": 999
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": true
+			}
+		},
+		"events": {
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [
+						"minecraft:chest",
+						"minecraft:inventory",
+						"minecraft:no_owner",
+						"function_1"
+					]
+				}
+			},
+			"minecraft:on_prime": {
+				"add": {
+					"component_groups": [
+						"minecraft:private",
+						"function_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:chest",
+						"minecraft:no_owner"
+					]
+				}
+			},
+			"minecraft:owner_prime": {
+				"add": {
+					"component_groups": [
+						"owner_private",
+						"function_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"owner_local"
+					]
+				}
+			},
+			"minecraft:on_interact": {
+				"add": {
+					"component_groups": [
+						"minecraft:chest",
+						"function_3",
+						"minecraft:no_owner"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:private"
+					]
+				}
+			},
+			"minecraft:on_owner_interact": {
+				"add": {
+					"component_groups": [
+						"owner_local",
+						"function_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"owner_private"
+					]
+				}
+			},
+			"minecraft:open": {
+				"add": {
+					"component_groups": [
+						"minecraft:container",
+						"function_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:inventory"
+					]
+				}
+			},
+			"minecraft:close": {
+				"remove": {
+					"component_groups": [
+						"minecraft:container"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:inventory",
+						"function_5"
+					]
+				}
+			},
+			"minecraft:only_for_owner": {
+				"remove": {
+					"component_groups": [
+						"minecraft:container",
+						"minecraft:inventory",
+						"minecraft:chest",
+						"minecraft:private",
+						"minecraft:no_owner"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:test_for_owner",
+						"minecraft:set_owner",
+						"owner_local"
+					]
+				}
+			},
+			"minecraft:broked": {
+				"add": {
+					"component_groups": [
+						"function_8"
+					]
+				}
+			},
+			"error": {
+				"add": {
+					"component_groups": [
+						"function_6"
+					]
+				}
+			},
+			"error_owned": {
+				"add": {
+					"component_groups": [
+						"function_7"
+					]
+				}
+			},
+			"owner_open": {
+				"add": {
+					"component_groups": [
+						"minecraft:owner_access_only",
+						"function_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:test_for_owner"
+					]
+				}
+			},
+			"owner_close": {
+				"add": {
+					"component_groups": [
+						"minecraft:test_for_owner",
+						"function_5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:owner_access_only"
+					]
+				}
+			},
+			"remove_1": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_1"
+					]
+				}
+			},
+			"remove_2": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_2"
+					]
+				}
+			},
+			"remove_3": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_3"
+					]
+				}
+			},
+			"remove_4": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_4"
+					]
+				}
+			},
+			"remove_5": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_5"
+					]
+				}
+			},
+			"remove_6": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_6"
+					]
+				}
+			},
+			"remove_7": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_7"
+					]
+				}
+			},
+			"remove_8": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_8"
+					]
+				}
+			}
+		}
+	}
+}

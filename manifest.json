@@ -1,0 +1,73 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"uuid": "f521c6e0-4d47-41ec-9b14-da7ada7ada7a",
+		"platform_locked": false,
+		"min_engine_version": [
+			1,
+			19,
+			50
+		],
+		"version": [
+			1,
+			0,
+			11
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "f521c6e0-4d47-41ec-9b14-da7a7770d01e",
+			"version": [
+				1,
+				0,
+				11
+			]
+		},
+		{
+			"description": "JavaScript module code",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "76310e4c-d485-46e6-ab7b-4fabfae56944",
+			"version": [
+				4,
+				7,
+				4
+			],
+			"entry": "scripts/Main2.js"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "f521c6e0-4d47-41ec-9b14-12e500125e55",
+			"version": [
+				1,
+				0,
+				11
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.1.0-beta"
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "high",
+			"name": "High",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "rare",
+			"name": "Rare",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "Common",
+			"name": "common",
+			"memory_tier": 1
+		}
+	]
+}

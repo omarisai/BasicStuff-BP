@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "basics:stonebrick_mossy_reinforced"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"X#X",
+			"XXX"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:obsidian"
+			},
+			"X": {
+				"item": "minecraft:stonebrick",
+				"data": 1
+			}
+		},
+		"result": [
+			{
+				"item": "basics:stonebrick_mossy_reinforced",
+				"count": 8
+			}
+		]
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bps:backpack_xl",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:foil": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "backpack_xl"
+			},
+			"minecraft:display_name": {
+				"value": "Backpack [Xtra Big]"
+			}
+		},
+		"events": {
+			/*
+		"test1":{
+		"sequence":[
+		{
+			"condition": "!query.is_riding && (query.is_on_ground || query.is_in_water)",
+			"run_command":{
+	"command": ["ride @s summon_ride itemfilter:container no_ride_change big"]
+			}
+		}
+		]
+		}		*/
+		}
+	}
+}
