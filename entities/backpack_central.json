@@ -1,5 +1,5 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "bps:bp_central",
@@ -27,7 +27,8 @@
 			"minecraft:fire_immune": {},
 			"minecraft:health": {
 				"value": 9,
-				"max": 9
+				"max": 9,
+				"min": 1
 			},
 			"minecraft:collision_box": {
 				"height": 0.3,
