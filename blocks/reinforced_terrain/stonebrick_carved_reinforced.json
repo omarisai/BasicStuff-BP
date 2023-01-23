@@ -31,11 +31,11 @@
 			},
 			"minecraft:selection_box": {
 				"origin": [ -8, 0, -8 ],
-				"size": [ -8, 0, -8 ]
+				"size": [ 16, 16, 16 ]
 			},
 			"minecraft:collision_box": {
 				"origin": [ -8, 0, -8 ],
-				"size": [ -8, 0, -8 ]
+				"size": [ 16, 16, 16 ]
 			},
 			"minecraft:geometry": "geometry.block_2_faces",
 			"minecraft:destructible_by_mining": false,
