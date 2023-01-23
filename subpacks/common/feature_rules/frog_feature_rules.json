@@ -29,18 +29,12 @@
 			"scatter_chance": 0.3,
 			"x": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					16
-				]
+				"extent": [ 0, 16 ]
 			},
 			"y": 62,
 			"z": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					16
-				]
+				"extent": [ 0, 16 ]
 			}
 		}
 	}

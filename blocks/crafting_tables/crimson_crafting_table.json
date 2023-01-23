@@ -19,16 +19,8 @@
 				"seconds_to_destroy": 3
 			},
 			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					16,
-					16,
-					16
-				]
+				"origin": [ -8, 0, -8 ],
+				"size": [ -8, 0, -8 ]
 			},
 			"minecraft:geometry": "geometry.block",
 			"minecraft:crafting_table": {

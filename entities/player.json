@@ -32,10 +32,7 @@
 					]
 				},
 				"minecraft:timer": {
-					"time": [
-						0,
-						0
-					],
+					"time": [ 0, 0 ],
 					"looping": false,
 					"time_down_event": {
 						"event": "minecraft:clear_add_bad_omen",
@@ -202,21 +199,13 @@
 				"pull_in_entities": true,
 				"seats": [
 					{
-						"position": [
-							0.4,
-							-0.15,
-							0.04
-						],
+						"position": [ 0.4, -0.15, 0.04 ],
 						"min_rider_count": 0,
 						"max_rider_count": 0,
 						"lock_rider_rotation": 0
 					},
 					{
-						"position": [
-							-0.4,
-							-0.15,
-							0.04
-						],
+						"position": [ -0.4, -0.15, 0.04 ],
 						"min_rider_count": 1,
 						"max_rider_count": 2,
 						"lock_rider_rotation": 0

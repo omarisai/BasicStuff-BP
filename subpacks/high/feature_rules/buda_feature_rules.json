@@ -24,24 +24,15 @@
 			"scatter_chance": 14.0,
 			"x": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					32
-				]
+				"extent": [ 0, 32 ]
 			},
 			"y": {
 				"distribution": "uniform",
-				"extent": [
-					80,
-					150
-				]
+				"extent": [ 80, 150 ]
 			},
 			"z": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					32
-				]
+				"extent": [ 0, 32 ]
 			}
 		}
 	}

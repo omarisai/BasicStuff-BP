@@ -44,18 +44,12 @@
 			"scatter_chance": 0.25,
 			"x": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					32
-				]
+				"extent": [ 0, 32 ]
 			},
 			"y": "query.heightmap(variable.worldx, variable.worldz) + -1",
 			"z": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					32
-				]
+				"extent": [ 0, 32 ]
 			}
 		}
 	}

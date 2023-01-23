@@ -85,11 +85,7 @@
 						"zombie"
 					],
 					"seats": {
-						"position": [
-							0.0,
-							0.675,
-							-0.1
-						]
+						"position": [ 0.0, 0.675, -0.1 ]
 					}
 				}
 			},
@@ -216,11 +212,7 @@
 						"zombie"
 					],
 					"seats": {
-						"position": [
-							0.0,
-							0.675,
-							-0.1
-						]
+						"position": [ 0.0, 0.675, -0.1 ]
 					}
 				}
 			},
@@ -456,10 +448,7 @@
 			"minecraft:behavior.beg": {
 				"priority": 9,
 				"look_distance": 8,
-				"look_time": [
-					2,
-					4
-				],
+				"look_time": [ 2, 4 ],
 				"items": [
 					"bone",
 					"porkchop",

@@ -50,11 +50,7 @@
 				"pull_in_entities": true,
 				"seats": [
 					{
-						"position": [
-							0,
-							0.2,
-							0
-						],
+						"position": [ 0, 0.2, 0 ],
 						"min_rider_count": 0,
 						"max_rider_count": 0,
 						"lock_rider_rotation": 0
