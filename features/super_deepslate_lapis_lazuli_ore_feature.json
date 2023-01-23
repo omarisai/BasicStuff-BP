@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "basics:super_deepslate_lapis_lazuli_ore_feature"
+		},
+		"count": 7,
+		"replace_rules": [
+			{
+				"places_block": "basics:super_deepslate_lapis_lazuli_ore",
+				"may_replace": [
+					"minecraft:deepslate"
+				]
+			}
+		]
+	}
+}

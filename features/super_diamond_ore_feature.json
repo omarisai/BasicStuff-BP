@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "basics:super_diamond_ore_feature"
+		},
+		"count": 8,
+		"replace_rules": [
+			{
+				"places_block": "basics:super_diamond_ore",
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+	}
+}
