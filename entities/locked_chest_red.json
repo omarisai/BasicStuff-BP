@@ -18,7 +18,6 @@
 		"component_groups": {
 			"minecraft:private": {
 				"minecraft:health": {
-					"min": 999,
 					"max": 9999,
 					"value": 9999
 				},
@@ -103,7 +102,6 @@
 					"value": 1
 				},
 				"minecraft:health": {
-					"min": 0,
 					"max": 9999,
 					"value": 9999
 				}
@@ -188,7 +186,6 @@
 			},
 			"owner_private": {
 				"minecraft:health": {
-					"min": 999,
 					"max": 999,
 					"value": 999
 				},
@@ -252,7 +249,6 @@
 			},
 			"owner_local": {
 				"minecraft:health": {
-					"min": 0,
 					"max": 9999,
 					"value": 9999
 				},
@@ -369,8 +365,7 @@
 				"breathes_solids": true
 			},
 			"minecraft:knockback_resistance": {
-				"value": 999,
-				"max": 999
+				"value": 1
 			},
 			"minecraft:physics": {
 				"has_gravity": false,
