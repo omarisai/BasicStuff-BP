@@ -1,7 +1,7 @@
 {
 	"values": [
+        "welcome",
 		"red_structures",
-		"temp_despawn",
-        "welcome2"
+		"temp_despawn"
 	]
 }
