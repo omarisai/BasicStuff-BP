@@ -1,0 +1,49 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:spike_trap"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 1,
+			"minecraft:on_step_on": {
+				"event": "spiked",
+				"target": "self"
+			},
+			"minecraft:on_step_off": {
+				"event": "unspike",
+				"target": "self"
+			}
+		},
+		"events": {
+			"spiked": {
+				"run_command": {
+					"command": [
+						"playsound tile.piston.in @a[r=3]"
+					]
+				},
+				"set_block_at_pos": {
+					"block_type": "korbon:spike_trap_spikes",
+					"block_offset": [ 0, 1, 0 ]
+				},
+				"damage": {
+					"amount": 20,
+					"target": "other",
+					"type": "override"
+				}
+			},
+			"unspike": {
+				"run_command": {
+					"command": [
+						"playsound tile.piston.out @a[r=3]"
+					]
+				},
+				"set_block_at_pos": {
+					"block_type": "minecraft:air",
+					"block_offset": [ 0, 1, 0 ]
+				}
+			}
+		}
+	}
+}

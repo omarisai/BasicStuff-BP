@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 7.0,
+        "max": 10.0
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:netherite_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:diamond_boots"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:diamond_helmet"
+        },
+                {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:netherite_chestplate"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:netherite_boots"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:netherite_helmet"
+        },
+                {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:netherite_leggings"
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 4.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:golden_apple"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3.0,
+                "max": 6.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:goat_horn"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:echo_shard"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:recovery_compass"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:verdant_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ochre_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pearlescent_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk_sensor"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tadpole_bucket"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:allay_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

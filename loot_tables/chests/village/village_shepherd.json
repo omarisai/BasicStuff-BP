@@ -1,0 +1,163 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 5.0
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 8.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:white_wool"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:black_wool"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:gray_wool"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:brown_wool"
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:light_gray_wool"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears"
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 6.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:wheat"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:goat_horn"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:echo_shard"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:recovery_compass"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:verdant_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ochre_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pearlescent_froglight"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sculk_sensor"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tadpole_bucket"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:allay_spawn_egg"
+        }
+      ]
+    }
+  ]
+}

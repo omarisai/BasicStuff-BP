@@ -1,0 +1,142 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:banana_block",
+			"properties": {
+				"korbon:growth_stage": [ 0, 1, 2 ]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.banana_block",
+			"minecraft:entity_collision": false,
+			"minecraft:pick_collision": {
+				"origin": [ -8, 0, -8 ],
+				"size": [ 16, 16, 16 ]
+			},
+			"minecraft:breathability": "air",
+			"minecraft:destroy_time": 0.2,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#0D5500",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:on_interact": {
+				"event": "meal",
+				"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:bone_meal')"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"down"
+						],
+						"block_filter": [
+							"minecraft:leaves"
+						]
+					}
+				]
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "grow_stage"
+				}
+			}
+		},
+		"events": {
+			"grow_stage": {
+				"randomize": [
+					{
+						"weight": 1
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"korbon:growth_stage": "(query.block_property('korbon:growth_stage')<2) ? query.block_property('korbon:growth_stage') + 1 : 2"
+						}
+					}
+				]
+			},
+			"final_drop": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/banana_block.json"
+				},
+				"set_block": {
+					"block_type": "korbon:banana_block"
+				}
+			},
+			"meal": {
+				"sequence": [
+					{
+						"decrement_stack": {}
+					},
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:crop_growth_emitter ~~~"
+							]
+						}
+					},
+					{
+						"trigger": {
+							"event": "grow_stage"
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('korbon:growth_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "banana_block_0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [ -6, 0, -6 ],
+						"size": [ 12, 16, 12 ]
+					},
+					"minecraft:loot": "loot_tables/blocks/empty.json"
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:growth_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "banana_block_1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [ -6, 0, -6 ],
+						"size": [ 12, 16, 12 ]
+					},
+					"minecraft:loot": "loot_tables/blocks/empty.json"
+				}
+			},
+			{
+				"condition": "query.block_property('korbon:growth_stage') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "banana_block",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [ -6, 0, -6 ],
+						"size": [ 12, 16, 12 ]
+					},
+					"minecraft:loot": "loot_tables/block/banana_block.json",
+					"minecraft:on_interact": {
+						"event": "final_drop",
+						"target": "self"
+					}
+				}
+			}
+		]
+	}
+}

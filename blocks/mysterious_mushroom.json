@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:mysterious_mushroom"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:map_color": "#3B164B",
+			"minecraft:explosion_resistance": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mysterious_mushroom",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/mysterious_mushroom.json",
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:pick_collision": {
+				"origin": [ -3, 0, -3 ],
+				"size": [ 6, 8, 6 ]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:display_name": "Mysterious Mushroom",
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "sound"
+				}
+			}
+		},
+		"events": {
+			"sound": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound custom.mysterious_mushroom @a[r=10] ~~~ 0.5 1 1"
+							],
+							"target": "self"
+						}
+					}
+				]
+			}
+		}
+	}
+}
